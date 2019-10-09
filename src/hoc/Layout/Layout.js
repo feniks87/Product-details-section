@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import ProductDescription from '../../components/ProductDescription/ProductDescription';
+import {ProductDescription} from '../../components/ProductDescription/ProductDescription';
 import styles from './Layout.module.css';
 
 const Layout = () => (
