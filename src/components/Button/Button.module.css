@@ -1,0 +1,18 @@
+.Button {
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    font-size: 1.1rem;
+    color: var(--font-color-dark);
+    font-weight: 700;
+    border: 2px solid var(--border-color-dark);
+    background-color: #ffff;
+    transition: all .2s;
+}
+ .Button:hover {
+    background-color: black;
+    color: #ffff;
+ }
+
+ .Button:focus {
+    outline: 0;
+ }

@@ -1,0 +1,33 @@
+.CartItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.Image {
+    grid-column: 1;
+}
+
+.Image img {
+    width: 6rem;
+}
+
+.Details {
+    grid-column: 2;
+    font-size: 1rem;
+}
+
+.Details div {
+    margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .Image img {
+        width: 9rem;
+    }
+
+    .Details {
+        font-size: 1.2rem;
+    }
+}
+

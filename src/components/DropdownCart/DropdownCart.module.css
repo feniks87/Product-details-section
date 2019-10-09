@@ -1,0 +1,64 @@
+.Wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.CartLink {
+    position: relative;
+    padding: 1.3rem 2rem;
+    z-index: 200;
+}
+
+.CartLink:hover {
+    background-color: #ffffff;
+    display: block;
+    border-top: 1px solid var(--border-color-light);
+    border-left: 1px solid var(--border-color-light);
+    border-right: 1px solid var(--border-color-light);
+}
+
+.CartLinkActive {
+    position: relative;
+    padding: 1.3rem 2rem;
+    z-index: 200;
+    background-color: #ffffff;
+    display: block;
+    border-top: 1px solid var(--border-color-light);
+    border-left: 1px solid var(--border-color-light);
+    border-right: 1px solid var(--border-color-light);
+}
+
+.DropdownCart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+    position: absolute;
+    top: 3.93rem;
+    right: 0;
+    width: 22rem;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color-light);
+    padding: 1.5rem;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+    .CartLink:hover {
+        background-color: transparent;
+        box-sizing: none;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .DropdownCart {
+        width: calc(100vw - 6rem);
+    }
+}
+
+
+
+
+
+

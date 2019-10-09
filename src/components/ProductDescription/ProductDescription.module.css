@@ -1,0 +1,73 @@
+.ProductDescription {
+    grid-row: 2;
+    grid-column: 3 / -3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+}
+
+.Image {
+    grid-column: 1;
+}
+
+.Image img {
+    width: 100%;
+}
+
+.DescriptionBox {
+    grid-column: 2;
+}
+
+.Description {
+    color: var(--font-color-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.Size {
+    text-transform: uppercase;
+    color: var(--font-color-light);
+    padding: 1rem 0;
+}
+
+.Asterisk {
+    color: red;
+}
+
+.SelectedSize {
+    font-weight: 700;
+    color: #000;
+}
+
+@media only screen and (max-width: 950px) {
+    .ProductDescription {
+        grid-column: 2 / -2;
+        column-gap: 5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ProductDescription {
+        grid-column: 1 / -1;
+        margin: 0 1.5rem;
+        margin-bottom: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, min-content);
+        row-gap: 2rem;
+    }
+    .Image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .DescriptionBox {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .Price {
+        border: none;
+        padding: 0;
+    }
+}
